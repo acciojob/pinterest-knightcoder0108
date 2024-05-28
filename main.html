@@ -1,29 +1,59 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Questionnaire</title>
-  <style>
-    .questions {
-      background-color: #f8fffe;
-      height: 50px;
-      margin-top: 20px;
-      padding: 15px;
-      max-width: 600px;
-      border-left: 8px solid green;
-    }
-  </style>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Pinterest-like Hero Section</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+        }
+        .hero {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            height: 100vh;
+            background-color: #f6f6f6;
+            padding: 0 2rem;
+        }
+        .hero img {
+            width: 50%;
+            height: 100%;
+            object-fit: cover;
+        }
+        .hero-content {
+            max-width: 50%;
+            text-align: left;
+        }
+        .hero h1 {
+            font-size: 3rem;
+            margin-bottom: 1rem;
+        }
+        .hero p {
+            font-size: 1.5rem;
+            margin-bottom: 2rem;
+        }
+        .explore-button {
+            padding: 1rem 2rem;
+            background-color: #e60023;
+            color: white;
+            border: none;
+            border-radius: 5px;
+            font-size: 1rem;
+            cursor: pointer;
+            text-decoration: none;
+        }
+    </style>
 </head>
 <body>
-  <blockquote class="questions">
-    <p>Who was the first female to become the governor of an Indian state?</p>
-  </blockquote>
-  <blockquote class="questions">
-    <p>Who among first Woman to climb Mount Everest twice?</p>
-  </blockquote>
-  <blockquote class="questions">
-    <p>Who is President of India?</p>
-  </blockquote>
+    <div class="hero">
+        <img src="https://images.unsplash.com/photo-1557682224-5b8590cd9ec5" alt="Beautiful landscape">
+        <div class="hero-content">
+            <h1>Welcome to my Pinterest clone</h1>
+            <p>Discover more inspirations and save your favorite ideas</p>
+            <a href="#" class="explore-button">Explore Now</a>
+        </div>
+    </div>
 </body>
 </html>
